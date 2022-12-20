@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
 }
-nav{
+.background{
+    background-color: rgb(200, 195,195);
+}
+header{
     display: flex;
-    background: black;
+    background: rgb(0, 0, 0);
     position: sticky;
-    height: 60px;
+    height: 70px;
     align-items: center;
     top: 0;
+    width: 100%;
 }
 .logo img{
     height: 40px;
@@ -48,17 +52,17 @@ nav{
     border-radius: 0 5px 5px 0;
 }
 #profile img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     padding-right:20px;
 }
 #cart img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     padding-right: 20px;
 }
 .icons{
-    margin:10px;
+    margin:8px;
 }
 .icons:hover{
     border: 1px solid white;
@@ -67,14 +71,86 @@ nav{
 .subnav{
     display: flex;
     background-color: #232f3e;
-    padding:9px;
     margin: auto;
+    width: 100%;
+    text-align: center;
 }
 .subnav a{
     color: white;
-    padding: 4px;
+    padding: 10px;
     text-decoration: none;
     font-family: 'Amazon Ember', sans-serif;
-    font-size:15px;
+    font-size:18px;
     width: 8%;
+}
+.items1, 
+.items2, 
+.items3,
+.items4,
+.items5{
+    box-sizing: border-box;
+    border: 0px solid rgb(255, 252, 252);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.items1 img{
+    margin:10px;
+    padding:10px;
+    width: 25%;
+}
+#phone1{
+    width: 20%;
+}
+#phone2{
+    width: 20%;
+}
+.items1 .buttons,
+.items2 .buttons,
+.items3 .buttons,
+.items4 .buttons,
+.items5 .buttons{
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    font-size:25px;
+    background-color: #cbc9e1;
+}
+.items2 img{
+    margin: 10px;
+    padding:10px;
+    width: 22%;
+}
+#lap1{
+    width: 20%;
+}
+#lap4{
+    width: 25%;
+}
+.items3 img{
+    margin: 10px;
+    padding: 10px;
+    width: 22%;
+}
+.items4 img,
+.items5 img{
+    margin: 10px;
+    padding:10px;
+} 
+#head1,
+#head2,
+#head3,
+#head4{
+    width: 15%;
+    padding:30px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#head5{
+    width: 17%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
