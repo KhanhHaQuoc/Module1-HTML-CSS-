@@ -5,29 +5,30 @@
 .background{
     background-color: rgb(200, 195,195);
 }
-header{
-    display: flex;
+.header{
     background: rgb(0, 0, 0);
     position: sticky;
-    height: 70px;
-    align-items: center;
     top: 0;
     width: 100%;
 }
-.logo img{
+.header__top{
+    display: flex;
+    align-items: center;
+}
+.header__logo img{
     height: 40px;
     align-items: left;
     padding-left: 40px;
     padding-top: 10px;
 }
-.logosandicons img:hover{
+.header__logo img:hover{
     border: 1px solid white;
     border-radius: 2px ; 
 }
 .btn img{
     width: 26px;
 }
-.search{
+.header__search{
     display: flex;
     background: white;
     width: 70%;
@@ -36,7 +37,7 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-.search input{
+.header__search input{
     height: 36px;
     border-radius: 5px;
     font-size: 16px;
@@ -60,7 +61,6 @@ header{
     width: 40px;
     height: 40px;
     padding-right: 20px;
-    
 }
 .icons{
     margin:8px;
@@ -69,14 +69,14 @@ header{
     border: 1px solid white;
     border-radius: 2px;
 }
-.subnav{
+.header__nav{
     display: flex;
     background-color: #232f3e;
     margin: auto;
     width: 100%;
     text-align: center;
 }
-.subnav a{
+.header__nav a{
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -84,11 +84,7 @@ header{
     font-size:18px;
     width: 8%;
 }
-.items1, 
-.items2, 
-.items3,
-.items4,
-.items5{
+.items{
     box-sizing: border-box;
     border: 0px solid rgb(255, 252, 252);
     margin-left: 10px;
@@ -96,107 +92,52 @@ header{
     margin-right: 10px;
     background-color: white;
 }
-.items1 img{
-    margin:12px;
-    padding:12px;
-    width: 25%;
-}
-#phone1{
-    width: 18%;
-}
-#phone2{
-    width: 19%;
-}
-#phone3{
-    width: 13%;
-}
-.items1 .buttons,
-.items2 .buttons,
-.items3 .buttons,
-.items4 .buttons,
-.items5 .buttons{
-    width: 100%;
-    border: 0;
-    cursor: pointer;
-    height: 50px;
+.items__heading{
     font-size:25px;
     background-color: #cbc9e1;
-}
-.items2 img{
-    margin: 10px;
-    padding:10px;
-    width: 22%;
-}
-#lap1{
-    width: 20%;
-}
-#lap2{
-    width: 14%;
-}
-#lap4{
-    width: 25%;
-}
-#lap3{
-    width: 22%;
-}
-.items3 img{
-    margin: 10px;
-    padding: 10px;
-    width: 22%;
-}
-.items4 img,
-.items5 img{
-    margin: 10px;
-    padding:10px;
-} 
-#head1,
-#head2,
-#head3,
-#head4{
-    width: 15%;
-    padding:30px;
-    margin-left: auto;
-    margin-right:auto;
-}
-#head5{
-    width: 17%;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#book1,
-#book2,
-#book3{
-    width: 16%;
-    padding:auto;
-}
-#book4{
-    width: 16%;
-}
-#book1{
-    width: 22%;
-}
-#toy5{
-    width: 14%;
-}
-#tv5{
-    width: 18%;
-}
-.bar{
     text-align: center;
-    padding: 5px;
+    padding: 10px ;
 }
-.bar button{
-    width: 17%;
-    border: 1pxx solid rgba(255, 166, 0, 0.768);
-    cursor: pointer;
-    font-size: 25px;
-    background-color: rgba(255, 166, 0, 0.768);
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #ffe093;
+.items__images{
+    padding-block:16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 24px;
 }
-.bar a{
+.items__images img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 2px solid rgba(0, 0, 0, 0.264);;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.264);
+    padding-block: 16px;
+    font-size: 24px;
+}
+.footer__btn{
+    background-color: rgba(255, 166, 0, 0.564);
+    font-size: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    border: none ;
+}
+.footer__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    padding-block: 10px;
+    flex-wrap: wrap;
+}
+.footer__bottom a{
     text-decoration: none;
-    color: lightblue;
+    font-size: 16px;
+   color: whitesmoke;
 }
